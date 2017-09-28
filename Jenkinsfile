@@ -1,4 +1,4 @@
-Jenkinsfile (Declarative Pipeline)
+Jenkinsfile ()
 pipeline {
     agent { docker 'maven:3.3.3' }
     stages {
