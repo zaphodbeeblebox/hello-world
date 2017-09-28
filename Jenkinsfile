@@ -1,9 +1,10 @@
+Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker 'maven:3.3.3' }
+    agent { docker 'ruby' }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh 'ruby --version'
             }
         }
     }
