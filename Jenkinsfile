@@ -19,7 +19,7 @@ pipeline {
                     git clone https://github.com/zaphodbeeblebox/java
 		    chmod 777 java 
                      cd java
-		     		java HelloWorld.java
+		     		javac HelloWorld.java
 		                java HelloWorld /tmp/test.log
                 '''
                 
