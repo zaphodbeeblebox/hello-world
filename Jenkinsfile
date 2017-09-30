@@ -17,8 +17,10 @@ pipeline {
                     chmod 777 /home/jenkins/gitrepository
 		    cd /home/jenkins/gitrepository
                     git clone https://github.com/zaphodbeeblebox/java
+		    chmod 777 java 
                      cd java
-		                java HelloWorld.java /tmp/test.log
+		     		java HelloWorld.java
+		                java HelloWorld /tmp/test.log
                 '''
                 
             }
