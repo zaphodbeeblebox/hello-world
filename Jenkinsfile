@@ -15,6 +15,9 @@ pipeline {
                 sh '''
                     mkdir /home/jenkins/gitrepository
                     chmod 777 /home/jenkins/gitrepository
+                    git clone https://github.com/zaphodbeeblebox/java
+                     cd java
+		                java test.java /tmp/test.log
                 '''
                 
             }
