@@ -17,6 +17,7 @@ pipeline {
                 sh 'sudo apt-get -y purge git; sudo apt-get -y autoremove'
                 sh ' sudo /usr/bin/apt-get -y install git'
                 sh '''
+			rm -rf /home/jenkins/gitrepository
                     mkdir /home/jenkins/gitrepository
                     chmod 777 /home/jenkins/gitrepository
 		    cd /home/jenkins/gitrepository
