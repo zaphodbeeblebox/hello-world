@@ -31,7 +31,6 @@ pipeline {
 		    steps{
              
                 sh '''
-                     cd java
 		     		javac HelloWorld.java
 		                java HelloWorld /tmp/test.log
                 '''
